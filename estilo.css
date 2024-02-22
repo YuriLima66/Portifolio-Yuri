@@ -7,11 +7,17 @@
     list-style: none;
     text-decoration: none;
 }
-a{
+
+* p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+a {
     decoration: none;
     color: whitesmoke;
 }
-body{
+body {
     background-color: #111;
     max-width: 100%;
     margin: 0 auto;
@@ -34,8 +40,10 @@ main .sobre{
     padding:40px;
 
 }
-h1 .titulo_principal{
-    text-align: center;
+h1, h3, b{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    text-shadow:  2px 2px rgba(255, 255, 255, 0.068) ;
 }
 .sobre_yuri{
     max-width: 80%;
@@ -144,9 +152,11 @@ h1 .titulo_principal{
     font-size: 1.5rem;
 }
 .sobre_info p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: .9rem;
 
 }
+
 
 @keyframes sobesecao {
     from {
@@ -201,12 +211,6 @@ h1 .titulo_principal{
 
 /*SEÇÃO SERVICES*/
 
-.my_services{
-    color:white;
-}
-
-
-
 .services {
         margin-top: -20px;
         padding: -20px;
@@ -246,14 +250,14 @@ h1 .titulo_principal{
 .my_services ul li i {
     color: #dc3545;
     font-size: 2.7rem;
+    
 
 }
 
 .my_services ul li h3{
     color:#fff;
     font-size: 1.6rem;
-    font-family: 'poppins';
-    font-weight: 500;
+   
 }
 .my_services ul li p{
     color:#707070;
