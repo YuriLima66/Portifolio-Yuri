@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&text=Hello%20World');
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+:root{
+    --cor0:whitesmoke;
+    --cor1:black;
+    --cor2:#e1221c;
+    --cor3:#707070;
+    --cor4:#151515;
+    --cor5:#222;
+     
+    --fonte-padrao:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fonte-destaque:'Bebas Neue', sans-serif;
+    }
 *{
     padding: 0;
     margin: 0;
@@ -9,16 +18,16 @@
 }
 
 * p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:var(--fonte-destaque)
     
 
 }
 a {
     decoration: none;
-    color: whitesmoke;
+    color: var(--cor0);
 }
 body {
-    background-color: #111;
+    background-color: var(--cor1);
     max-width: 100%;
     margin: 0 auto;
 }
@@ -27,8 +36,8 @@ body {
 /*SESSÃO ATUAL SOBRE MIM*/
 
 main {
-    background-color: #111;
-    color:white;
+    background-color: var(--cor1);
+    color:var(--cor0);
 
 }
 
@@ -41,7 +50,7 @@ main .sobre{
 
 }
 h1, h3, b{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:var(--fonte-destaque);
     
     text-shadow:  2px 2px rgba(255, 255, 255, 0.068) ;
 }
@@ -52,39 +61,13 @@ h1, h3, b{
     margin: 30px  0;
     grid-column: 1/-1;
     text-align: center;
-    color: #fff;
+    color: var(--cor0);
 }
 .sobre_titulo:hover{
     font-size: 110%;
 
 }
-.sobre_titulo h1 {
-    font-size: 2.5rem;
-    color:#ff5d56;
-    margin-bottom: 15px;
-    font-family: 'Berkshire Swash', cursive;
-}
 
-.sobre_titulo p {
-    color:#707070;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    position: relative;
-
-}
-
-.sobre_titulo div{
-    display: flex;
-    gap:10px;
-    justify-content: center;
-}
-.sobre_titulo span {
-    display: black;
-    height: 20px;
-    width: 20px;
-    border-radius:50%;
-    background-color: #dc3545;
-}
 .sobre img{
     animation: ladosecao .5s ease-out forwards  ;
     cursor:pointer;
@@ -103,7 +86,7 @@ h1, h3, b{
     animation: sobesecao .6s ease-in-out forwards;
     grid-column:2/-1;
     display: grid;
-    color: #707070;
+    color:var(--cor3);
     grid-template-columns: 1fr 1fr;
 }
 .sobre_texto{
@@ -113,11 +96,11 @@ h1, h3, b{
 }
 .sobre_texto h1{
     font-size: 2.3rem;
-    color:#fff;
+    color:var(--cor0);
     grid-column: 1/-1;
 }
 .sobre_texto h1::after{
-    background-color: #ff5d56;
+    background-color: var(--cor2);
     height: 6px;
     width: 60px;
     margin: 20px 0;
@@ -137,6 +120,12 @@ h1, h3, b{
     
     
 }
+.sobre_info a{
+    color: var(--cor3);
+}
+.sobre_info a:hover{
+    color:var(--cor0);
+}
 .sobre_info {
     margin-top: 30px;
     display: grid;
@@ -146,82 +135,30 @@ h1, h3, b{
     align-items: center;
 }
 .sobre_info i{
-    color:#dc3545;
+    color:var(--cor2);
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
 }
 .sobre_info p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte-destaque);
     font-size: .9rem;
 
 }
 
-
-@keyframes sobesecao {
-    from {
-        transition: .5s;
-        transform: translate3d(60px, 0, 0);
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-    }
-}
-@keyframes ladosecao {
-    from {
-        transition: .5s;
-        transform: translate3d(-60px, 0, 0);
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-    }
-}
-
 /*RESPONSIVO*/
-
-
-@media(max-width:992px){
-    .section-div img{
-        display: none;
-    }
-    .section-div{
-        background-image: url(portifolio.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .navegacao-primaria {
-        display: none;
-    }
-}
-  
-
-
-@media(max-width:992px){
-    .sobre img{
-        grid-column:1/-1;
-        justify-self: center;
-    }
-    .sobre_conteudo{
-        grid-column: 1/-1;
-    }
-}
-
-/*SEÇÃO SERVICES*/
 
 .services {
         margin-top: -20px;
         padding: -20px;
-        background-color: #151515;
+        background-color: var(--cor4);
 
 }
 
 .my_services {
     display: block;
     padding: 60px;
-    color:white;
+    color:var(--cor0);
 
 }
 
@@ -242,25 +179,25 @@ h1, h3, b{
     text-align: center;
     width: 200px;
     height: 200px;
-    background-color: #222;
+    background-color: var(--cor5);
     border-radius:15px;
     align-content: center;
 }
 
 .my_services ul li i {
-    color: #dc3545;
+    color: var(--cor2);
     font-size: 2.7rem;
     
 
 }
 
 .my_services ul li h3{
-    color:#fff;
+    color:var(--cor0);
     font-size: 1.6rem;
    
 }
 .my_services ul li p{
-    color:#707070;
+    color:var(--cor3);
     font-size: 1.1rem;
 }
 
@@ -294,15 +231,15 @@ h1, h3, b{
 .my_services li:hover::before{
     width: 100%;
     height: 100%;
-    border-top: 2px solid red;
-    border-right: 2px solid red;
+    border-top: 2px solid var(--cor2);
+    border-right: 2px solid var(--cor2);
 }
 
 .my_services li:hover::after{
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid red;
-    border-left: 2px solid red;
+    border-bottom: 2px solid var(--cor2);
+    border-left: 2px solid var(--cor2);
 }
 
 
