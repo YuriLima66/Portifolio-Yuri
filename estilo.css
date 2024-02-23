@@ -66,9 +66,11 @@ h3, b{
 }
 picture{
     width: 500px;
+    margin-left: 70px;
+    
 }
 .sobre_yuri{
-    max-width: 80%;
+    max-width: 85%;
 }
 .sobre_titulo{
     margin: -30px  0;
