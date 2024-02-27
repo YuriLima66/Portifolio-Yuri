@@ -1,7 +1,7 @@
 :root{
     --cor0:whitesmoke;
     --cor1:black;
-    --cor2:#e1221c;
+    --cor2:#0682c0;
     --cor3:#707070;
     --cor4:#151515;
     --cor5:#222;
@@ -64,11 +64,7 @@ h3, b{
     
     text-shadow:  2px 2px rgba(255, 255, 255, 0.068) ;
 }
-picture{
-    width: 500px;
-    margin-left: 70px;
-    
-}
+
 .sobre_yuri{
     max-width: 85%;
 }
@@ -85,16 +81,14 @@ picture{
 }
 
 .sobre img{
-    animation: ladosecao .5s ease-out forwards  ;
     cursor:pointer;
-    grid-row: 2;
-    max-width: 100%;
-    border-radius: 4px;
-    filter: blur(0px);
+    
+    max-width: 500px;
+  
 }
 .sobre img:hover{
     
-    transition: .5s ease-in;
+    transition: .1s ease-in;
     filter: blur(1px);
 
 }
@@ -257,22 +251,3 @@ picture{
     border-bottom: 2px solid var(--cor2);
     border-left: 2px solid var(--cor2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
