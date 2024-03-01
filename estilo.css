@@ -118,7 +118,7 @@ h3, b{
 }
 .sobre_texto h1:hover{
 font-size: 56px;
-transition: .3s ease-in-out;
+transition: 500ms ease-out;
 
 }
 
