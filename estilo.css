@@ -23,12 +23,12 @@ header{
 }
 
 * p{
-    font-family:var(--fonte-destaque)
+    font-family:var(--fonte-destaque);
     
 
 }
 a {
-    decoration: none;
+    text-decoration: none;
     color: var(--cor0);
 }
 body {
