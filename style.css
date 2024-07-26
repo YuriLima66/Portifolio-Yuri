@@ -1,0 +1,364 @@
+/* Estilos globais */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: relative; /* Mantém o contexto de posicionamento */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menu Toggle (Hamburguer) */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative; /* Alinha o menu hambúrguer de acordo com o fluxo normal do documento */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: fit-content; /* Ajusta a largura do menu hambúrguer */
+}
+
+.menu-toggle .bar {
+    width: 30px; /* Ajustado para o seu layout */
+    height: 2px; /* Diminuído para metade do tamanho original */
+    background-color: #fff;
+    margin: 4px 0; /* Ajustado para o novo tamanho das barras */
+}
+
+
+nav {
+    text-align: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333; 
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    transition: height 0.3s ease; 
+}
+
+nav ul.active {
+    display: flex;
+    height: 50%; 
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    background: #333; 
+}
+
+/* Novos estilos para hover dos links do menu */
+nav ul li a:hover {
+    background-color: #555;
+    text-decoration: none;
+    color: white;
+}
+
+/* Seções */
+section {
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 5vw;
+}
+
+.sobremim {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremim h2::after {
+    background-color: rgba(0, 0, 0, 0.412);
+    height: 4px;
+    margin: 2px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
+
+.sobre-content .minha-foto {
+    width: 50vw;
+    max-width: 450px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+#projetos .carousel-inner {
+    text-align: center;
+}
+
+#projetos .carousel-item {
+    padding: 2em 0;
+    height: 50vh;
+}
+
+.projeto {
+    color: white;
+    bottom: 35%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    width: 60%;
+    padding: 5px;
+}
+
+/* Contatos */
+.services {
+    padding: 2em 0;
+    background-color: #f4f4f4;
+}
+
+.my_services {
+    display: block;
+    padding: 60px;
+    color: #333;
+}
+
+.my_services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_services ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.my_services ul li i {
+    color: #555;
+    font-size: 2.7rem;
+}
+
+.my_services ul li h3 {
+    color: #333;
+    font-size: 1.6rem;
+}
+
+.my_services ul li p {
+    color: #777;
+    font-size: 1.1rem;
+}
+.my_services ul a{
+    text-decoration: none;
+}
+.my_services li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my_services li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my_services li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #555;
+    border-right: 2px solid #555;
+}
+
+.my_services li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #555;
+    border-left: 2px solid #555;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input,
+form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* Mobile first */
+nav ul {
+    display: none;
+    flex-direction: column;
+    background: #333; /* Fundo do menu */
+}
+
+nav ul.active {
+    display: flex;
+    height: 50%; /* Define a altura do menu como metade do tamanho original */
+}
+
+@media (min-width: 600px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        background: none; /* Remove o fundo do menu para layouts maiores */
+        height: auto; /* Define a altura como auto para layouts maiores */
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    section {
+        padding: 3em;
+        margin: 2em 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .sobre-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .sobre-content .minha-foto {
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #projetos .projeto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #projetos .projeto h3 {
+        flex: 1;
+    }
+
+    #projetos .projeto p {
+        flex: 2;
+        margin-left: 1em;
+    }
+
+    .my_services ul {
+        flex-direction: row;
+    }
+
+    .my_services ul li {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .my_services ul {
+        gap: 30px;
+    }
+
+    .my_services ul li {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 1048px) {
+    .sobre-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .sobre-content .minha-foto {
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+}

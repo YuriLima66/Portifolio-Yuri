@@ -1,62 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Yuri Lima</title>
-    <link rel="stylesheet" href="estilos/style.css" media="screen and (orientation:landscape)">
-    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Yuri Lima</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-
-    <main>
-        <article aria-label="sessão sobre mim" class="sobre">
-            <div class="sobre_texto">
-                <h1>Yuri Lima Developer</h1>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <div class="imagem_yuri">
-                <img src="imagem-perfil-m.png" alt="imagem yuri">
-            </div>
-            <div class="sobre_conteudo">
-                <div class="sobre_texto">
-                    <p class="sobre_yuri">
-                        Meu nome é Yuri Lima, sou estudante de Tecnologia, nos ultimos 10 anos da minha vida construi
-                        uma carreira sólida no varejo, tanto em gestão de pessoas quanto em metas individuais e globais,
-                        hoje procuro novos desafios, vi uma ótima oportunidade na Tecnologia, espero conseguir me
-                        desenvolver em um nivel profissional, hoje tenho projetos em JavaScript, HTML5, CSS, Python e
-                        estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Estácio de Sá.
-                        <br>
-                        <b class="sobre_titulo">Em constante desenvolvimento. </b>
-                    </p>
+            <ul id="nav-menu">
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#redes_sociais" onclick="toggleMenu()">Redes Sociais</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="sobre">
+        <div class="sobre-content">
+            <img src="imagens/imagem-perfil-m.png" alt="Foto_yuri" class="minha-foto">
+            <div class="sobremim">
+                <h2>Yuri Lima</h2>
+                <p>Meu nome é Yuri Lima, sou estudante de Tecnologia com uma década de experiência no varejo, onde desenvolvi uma carreira sólida em gestão de pessoas e metas tanto individuais quanto coletivas. Além disso, atuei como vendedor bilíngue, o que aprimorou minhas habilidades de comunicação em inglês e espanhol. Atualmente, estou buscando novos desafios na área de Tecnologia, uma área que vejo como uma excelente oportunidade para crescimento profissional. Tenho projetos desenvolvidos em JavaScript, HTML5, CSS, Python, Node.js, Bootstrap e Tailwind. Estou cursando Desenvolvimento de Software Multiplataforma na FATEC de Mauá, com o objetivo de me especializar e contribuir significativamente para o campo da tecnologia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div id="carouselProjetos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background: black url(imagens/img_games.png) center/cover no-repeat;">
+                    <div class="d-flex justify-content-center">
+                        <div class="projeto">
+                            <h3>Games retrô</h3>
+                            <p>Um site com alguns cards de personagens retrô, responsivo. Feito somente com HTML 5 e CSS3.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="sobre_info">
-                    <p><i class="fa-solid fa-calendar-days"></i>September,27 1995 </p>
-                    <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelancer: Available</p>
-                    <p><i class="fa-solid fa-location-dot"></i> São Paulo, Brazil</p>
-                    <p><i class="fa-sharp fa-solid fa-globe"></i>Portuguese, English</p>
-                    <p><i class="fa-solid fa-flag"></i>Brazilian</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>+55 (11)94950-1078</p>
-                    <p><i class="fa-solid fa-envelope"></i>Email: yrflima@gmail.com</p>
-                    <p><i class="fa-brands fa-github"></i><a href="https://github.com/YuriLima66"
-                            target="_blank">YuriLima66</a></p>
+                <div class="carousel-item" style="background: black url(imagens/img_brabas.png) top/cover no-repeat;">
+                    <div class="d-flex justify-content-center">
+                        <div class="projeto">
+                            <h3>As brabas do Corinthians</h3>
+                            <p>Projeto de site feito para uma torcida organizada em apoio ao futebol feminino do Corinthians. Feito com HTML5 e CSS3</p>
+                        </div>
+                    </div>
                 </div>
-        </article>
-    </main>
-    <section class="services">
+                <div class="carousel-item" style="background: black url(imagens/geleias_img.png) center/cover no-repeat;">
+                    <div class="d-flex justify-content-center">
+                        <div class="projeto">
+                            <h3>Landing Page</h3>
+                            <p>Landing page feita para uma loja de Geléias gourmet.Feito com HTML5 e CSS3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: black url(imagens/img_redessociais.png) center/cover no-repeat;">
+                    <div class="d-flex justify-content-center">
+                        <div class="projeto">
+                            <h3>Redes Sociais com iframe</h3>
+                            <p>Projeto de site de redes sociais, testando um pouco de iframe.Feito com HTML5 e CSS3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: black url(imagens/img_login.png) center/cover no-repeat;">
+                    <div class="d-flex justify-content-center">
+                        <div class="projeto">
+                            <h3>Login Interativo</h3>
+                            <p>Login interativo responsivo feito em exercico de responsividade. Feito com HTML5 e CSS3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: black url(imagens/geleias_img.png) center/cover no-repeat;">
+                    <div class="d-flex justify-content-center">
+                        <div class="projeto">
+                            <h3>Site Multiplataforma</h3>
+                            <p>Exercicio de projeto Multiplataforma para TV, Desktop, tablet e mobile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselProjetos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselProjetos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="services" id="redes_sociais">
         <div class="my_services">
             <ul>
                 <a href="https://www.linkedin.com/in/yuri-lima-2377a5283/" target="_blank">
                     <li>
                         <i class="fa-brands fa-linkedin"></i>
-                        <h3>Linkedin</h3>
+                        <h3>LinkedIn</h3>
                     </li>
                 </a>
                 <a href="https://github.com/YuriLima66" target="_blank">
@@ -65,18 +114,39 @@
                         <h3>GitHub</h3>
                     </li>
                 </a>
-
                 <a href="cv/Curriculo Yuri Fernando Lima dev.pdf" target="_blank">
                     <li>
                         <i class="fa-solid fa-file-arrow-down"></i>
-                        <h3>Curriculo</h3>
+                        <h3>Currículo</h3>
                     </li>
                 </a>
-
             </ul>
         </div>
     </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yuri Lima. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
