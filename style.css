@@ -335,6 +335,8 @@ nav ul.active {
         margin-left: 1em;
     }
 
+    
+
     .my_services ul {
         flex-direction: row;
     }
@@ -365,5 +367,8 @@ nav ul.active {
     .sobre-content .minha-foto {
         margin-bottom: 0;
         margin-right: 2em;
+    }
+    .projeto h3{
+        font-size: 24px;
     }
 }
