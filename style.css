@@ -1,6 +1,6 @@
 /* Estilos globais */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -134,6 +134,11 @@ section {
     background-color: black;
     width: 60%;
     padding: 5px;
+}
+
+.projeto h3{
+    font-family: "Alfa Slab One", serif;
+    font-size: 48px;
 }
 
 /* Contatos */
