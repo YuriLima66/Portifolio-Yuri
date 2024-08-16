@@ -1,11 +1,16 @@
 /* Estilos globais */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    scroll-behavior: smooth; /* Habilita a rolagem suave em todo o documento */
+}
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    
 }
 
 /* Cabeçalho */
@@ -145,7 +150,8 @@ section {
     text-align: center;
     padding: 2%;
     font-size: 3.5rem;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.258);
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.109);
+    color: #333;
 }
 
 /* Contatos */
@@ -378,4 +384,5 @@ nav ul.active {
     .projeto h3{
         font-size: 24px;
     }
+   
 }
