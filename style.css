@@ -141,6 +141,13 @@ section {
     font-size: 48px;
 }
 
+#projetos>h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 3.5rem;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.258);
+}
+
 /* Contatos */
 .services {
     padding: 2em 0;
