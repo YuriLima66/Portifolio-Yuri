@@ -75,6 +75,18 @@ nav ul li a {
     display: block;
     background: #333; 
 }
+.redes_fixed{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 99;
+}
+.logo_fixo{
+    height: 4rem;
+    
+}
 
 /* Novos estilos para hover dos links do menu */
 nav ul li a:hover {
