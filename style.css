@@ -80,7 +80,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     right: 2rem;
-    bottom: 5rem;
+    top: 15rem;
     z-index: 99;
 }
 .logo_fixo{
