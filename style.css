@@ -80,12 +80,19 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 5rem;
     z-index: 99;
 }
 .logo_fixo{
-    height: 4rem;
-    
+    height: 3.8rem;
+    margin: 1px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.logo_fixo:hover{
+    transform: translateX(-10%);
+    transition: ease-in-out 0.1s;
 }
 
 /* Novos estilos para hover dos links do menu */
@@ -132,13 +139,49 @@ section {
 }
 
 #projetos .carousel-inner {
-    text-align: center;
+    text-align: center;border-radius: 25px;
 }
 
 #projetos .carousel-item {
     padding: 2em 0;
     height: 50vh;
+    transition: transform 0.3s ease-in-out;
 }
+
+#projetos .carousel-item:hover {
+    border: #77777738 solid 2px;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.zero{
+    background: black url(imagens/img_la_romana.png) center/cover no-repeat;
+}
+.um{
+    background: black url(imagens/crud.png) center/cover no-repeat;
+
+}
+.dois{
+    background: black url(imagens/leilabolos.png) center/cover no-repeat;
+}
+.tres{
+    background: black url(imagens/img_games.png) center/cover no-repeat;
+}
+.quatro{
+    background: black url(imagens/img_brabas.png) top/cover no-repeat;
+}
+.cinco{
+    background: black url(imagens/geleias_img.png) center/cover no-repeat;
+}
+.seis{
+    background: black url(imagens/img_login.png) center/cover no-repeat;
+}
+.sete{
+    background: black url(imagens/img_redessociais.png) center/cover no-repeat;
+}
+
+
 
 .projeto {
     color: white;
