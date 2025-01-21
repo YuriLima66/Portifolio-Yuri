@@ -360,6 +360,7 @@ nav ul.active {
         flex-direction: row;
         background: none; /* Remove o fundo do menu para layouts maiores */
         height: auto; /* Define a altura como auto para layouts maiores */
+        justify-content: right;
     }
 
     nav ul li {
