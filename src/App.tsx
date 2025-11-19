@@ -28,10 +28,6 @@ function App() {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
   }, [isDark])
 
-  const toggleTheme = () => {
-    setIsDark((prev) => !prev)
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['sobre', 'projetos']
