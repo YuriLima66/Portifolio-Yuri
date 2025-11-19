@@ -7,18 +7,13 @@ import Footer from './components/Footer'
 
 function App() {
   const [activeSection, setActiveSection] = useState('sobre')
-  const [isDark, setIsDark] = useState(() => {
-    // Verifica se há preferência salva no localStorage
-    const savedTheme = localStorage.getItem('theme')
-    if (savedTheme) {
-      return savedTheme === 'dark'
-    }
-    // Verifica preferência do sistema
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-  })
 
   useEffect(() => {
     // Aplica o tema ao carregar
+    const savedTheme = localStorage.getItem('theme')
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isDark = savedTheme ? savedTheme === 'dark' : prefersDark
+    
     if (isDark) {
       document.documentElement.classList.add('dark')
     } else {
@@ -26,7 +21,7 @@ function App() {
     }
     // Salva no localStorage
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  }, [isDark])
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
