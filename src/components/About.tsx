@@ -42,7 +42,7 @@ const About = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img 
-                  src="/imagem portifólio.jpeg" 
+                  src="/imagens/imagem portifólio.jpg" 
                   alt="Yuri Lima" 
                   className="w-full h-full object-cover"
                 />
